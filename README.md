@@ -1,16 +1,24 @@
 # laravel-wsl-setup
+This guide is for installing latest PHP version from ppa:ondrej/php
+If you would like to install different version of PHP it is required to mention the version for all the packages.
+This guide is just for quick development WSL setup for learning and testing. Next i will have to learn to use Docker.
 
 ## WSL Install ->
 ```bash
 wsl --install
 ```
+```
 After this go to microsoft Store and install one of Ubuntu-** distros
+```
+```
+After this you can click Open and setup Ubuntu with username and password.
+```
 
 ## Ubuntu package list ->
 ```bash
 sudo apt-get update
 ```
-I think its always nice to upgrade aswell
+I think its always nice to upgrade aswell (not required)
 ```bash
 sudo apt-get upgrade
 ```
