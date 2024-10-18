@@ -1,8 +1,18 @@
 # laravel-wsl-setup
 
+## WSL Install ->
+```bash
+wsl --install
+```
+After this go to microsoft Store and install one of Ubuntu-** distros
+
 ## Ubuntu package list ->
 ```bash
 sudo apt-get update
+```
+I think its always nice to upgrade aswell
+```bash
+sudo apt-get upgrade
 ```
 
 ## PHP ->
@@ -67,3 +77,12 @@ php artisan migrate
 ```
 
 
+## WSL Remove ->
+Open CMD or PowerShell prompt
+```bash
+wsl -l
+```
+```bash
+wsl --unregister Ubuntu-**
+```
+Uninstall Ubuntu-** from Windows Search (App Store installed)
