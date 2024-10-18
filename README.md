@@ -30,6 +30,9 @@ cd ~
 curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
 ```
 ```bash
+HASH=`curl -sS https://composer.github.io/installer.sig`
+```
+```bash
 echo $HASH
 ```
 ```bash
