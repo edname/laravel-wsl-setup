@@ -31,9 +31,6 @@ sudo add-apt-repository ppa:ondrej/php
 sudo apt install php php-fpm php-mysql php-mbstring php-xml php-bcmath php-intl php-curl php-zip
 ```
 ```bash
-sudo service php-fpm start
-```
-```bash
 php -v
 ```
 
@@ -64,28 +61,26 @@ sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=compose
 ## SQLite intall ->
 Make sure that this repository of PHP is added - it is not required to repeat this step
 ```bash
-sudo add-apt-repository ppa:ondrej/php
-```
-```bash
 sudo apt install php-sqlite3
 ```
 
 
 ## Create laravel app ->
 ```bash
+mkdir code $$ cd code
+```
+```bash
 composer create-project laravel/laravel example-app
+```
+```bash
+cd example-app
 ```
 ```bash
 php artisan serve
 ```
 
-## Laravel DB:migration if required ->
-```bash
-php artisan migrate
-```
 
-
-## WSL Remove ->
+## How to Fully remove WSL with all files and config ->
 Open CMD or PowerShell prompt
 ```bash
 wsl -l
