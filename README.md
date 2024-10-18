@@ -43,27 +43,25 @@ php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo '
 sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
 ```
 
-## Create laravel app ->
-```bash
-composer create-project laravel/laravel example-app
-```
-
 ## SQLite intall ->
 Make sure that this repository of PHP is added - it is not required to repeat this step
 ```bash
 sudo add-apt-repository ppa:ondrej/php
 ```
 ```bash
-sudo yum install php-sqlite3
+sudo apt install php-sqlite3
 ```
 
 
-## Laravel project start ->
+## Create laravel app ->
+```bash
+composer create-project laravel/laravel example-app
+```
 ```bash
 php artisan serve
 ```
 
-## Laravel DB:migration ->
+## Laravel DB:migration if required ->
 ```bash
 php artisan migrate
 ```
