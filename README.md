@@ -59,7 +59,7 @@ sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=compose
 ```
 
 ## SQLite intall ->
-Make sure that this repository of PHP is added - it is not required to repeat this step
+Make sure that ppa:ondrej/php repository of PHP is added in the first steps
 ```bash
 sudo apt install php-sqlite3
 ```
