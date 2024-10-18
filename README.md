@@ -1,5 +1,6 @@
 # laravel-wsl-setup
 
+## Ubuntu package list ->
 ```bash
 sudo apt-get update
 ```
