@@ -93,4 +93,7 @@ wsl -l
 ```bash
 wsl --unregister Ubuntu-**
 ```
+```
+After doing previous steps you have to manually delete Ubuntu app
 Uninstall Ubuntu-** from Windows Search (App Store installed)
+```
