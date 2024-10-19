@@ -18,10 +18,6 @@ After this you can click Open and setup Ubuntu with username and password.
 ```bash
 sudo apt-get update
 ```
-I think its always nice to upgrade aswell (not required)
-```bash
-sudo apt-get upgrade
-```
 
 ## PHP ->
 ```bash
