@@ -9,8 +9,6 @@ wsl --install
 ```
 ```
 After this go to microsoft Store and install one of Ubuntu-** distros
-```
-```
 After this you can click Open and setup Ubuntu with username and password.
 ```
 
@@ -36,16 +34,10 @@ php -v
 sudo apt install php-cli unzip
 ```
 ```bash
-cd ~
-```
-```bash
 curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
 ```
 ```bash
 HASH=`curl -sS https://composer.github.io/installer.sig`
-```
-```bash
-echo $HASH
 ```
 ```bash
 php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
@@ -63,13 +55,7 @@ sudo apt install php-sqlite3
 
 ## Create laravel app ->
 ```bash
-mkdir code $$ cd code
-```
-```bash
 composer create-project laravel/laravel example-app
-```
-```bash
-cd example-app
 ```
 ```bash
 php artisan serve
