@@ -74,3 +74,62 @@ wsl --unregister Ubuntu-**
 After doing previous steps you have to manually delete Ubuntu app
 Uninstall Ubuntu-** from Windows Search (App Store installed)
 ```
+
+# git-new-env-setup
+
+Set up your Git identity
+```bash
+git config --global user.name "Your Name"
+```
+```bash
+git config --global user.email "your.email@example.com"
+```
+
+Check if an SSH key already exists
+```bash
+sudo ls ~/.ssh
+```
+
+If no key exists, generate one:
+```bash
+ssh-keygen -t ed25519 -C "your.email@example.com"
+```
+
+Copy the public key
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
+
+Add the public key to your GitHub account:
+Go to your GitHub account settings.
+Navigate to SSH and GPG keys.
+Click New SSH Key, paste the key, and save.
+
+Clone your repository using SSH
+```bash
+git clone git@github.com:name/example.git
+```
+
+Make Changes and Push
+```bash
+nano /example/README.md
+```
+
+```bash
+git add .
+```
+
+```bash
+git commit -m "Initial setup"
+```
+
+```bash
+git push origin main
+```
+
+
+
+
+
+
+
