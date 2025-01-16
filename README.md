@@ -24,24 +24,25 @@ sudo add-apt-repository ppa:ondrej/php
 ```bash
 sudo apt install php php-fpm php-mysql php-mbstring php-xml php-bcmath php-intl php-curl php-zip
 ```
-```bash
-php -v
-```
 
 
 ## Install Composer ->
 ```bash
 sudo apt install php-cli unzip
 ```
+Download Composer installer
 ```bash
 curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
 ```
+Chech Composer authentic HASH
 ```bash
 HASH=`curl -sS https://composer.github.io/installer.sig`
 ```
+Verify if HASH is Authentic
 ```bash
 php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 ```
+If you get "Installer verified" proceed to install
 ```bash
 sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
 ```
@@ -51,7 +52,6 @@ Make sure that ppa:ondrej/php repository of PHP is added in the first steps
 ```bash
 sudo apt install php-sqlite3
 ```
-
 
 ## Create laravel app
 ```bash
