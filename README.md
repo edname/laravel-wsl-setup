@@ -53,6 +53,14 @@ Make sure that ppa:ondrej/php repository of PHP is added in the first steps
 ```bash
 sudo apt install php-sqlite3
 ```
+Sqlite Browser to edit SQLITE databases
+```bash
+sudo apt-get install sqlitebrowser
+```
+To start using it enter
+```bash
+sqlitebrowser
+```
 
 ## Create laravel app
 ```bash
