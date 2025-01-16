@@ -82,20 +82,6 @@ Start the server
 ```bash
 php artisan serve
 ```
-
-## How to Fully remove WSL with all files and config ->
-Open CMD or PowerShell prompt
-```bash
-wsl -l
-```
-```bash
-wsl --unregister Ubuntu-**
-```
-```
-After doing previous steps you have to manually delete Ubuntu app
-Uninstall Ubuntu-** from Windows Search (App Store installed)
-```
-
 # git-new-env-setup
 
 Set up your Git identity
@@ -150,6 +136,19 @@ Push to main branch
 git push origin main
 ```
 
+
+## How to Fully remove WSL with all files and config ->
+Open CMD or PowerShell prompt
+```bash
+wsl -l
+```
+```bash
+wsl --unregister Ubuntu-**
+```
+```
+After doing previous steps you have to manually delete Ubuntu app
+Uninstall Ubuntu-** from Windows Search (App Store installed)
+```
 
 
 
