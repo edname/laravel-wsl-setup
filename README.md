@@ -1,7 +1,7 @@
 # laravel-wsl-setup
 This guide is for installing latest PHP version from ppa:ondrej/php
 If you would like to install different version of PHP it is required to mention the version for all the packages.
-This guide is just for quick development WSL setup for learning and testing. Next i will have to learn to use Docker.
+This guide is just for quick development WSL setup for learning and testing.
 
 ## WSL Install ->
 ```bash
