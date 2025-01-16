@@ -64,12 +64,24 @@ php artisan serve
 ## IF YOU HAVE EXISTING PROJECT
 Go into project directory
 ```bash
+cd example-app
+```
+Install all dependencies
+```bash
 composer install
 ```
+Create .env file
+```bash
+cp .env.example .env
+```
+Generate APP_KEY
+```bash
+php artisan key:generate
+```
+Start the server
 ```bash
 php artisan serve
 ```
-
 
 ## How to Fully remove WSL with all files and config ->
 Open CMD or PowerShell prompt
@@ -94,7 +106,7 @@ git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 ```
 
-Check if an SSH key already exists
+Check if an SSH key already exists on your WSL (but probably not new setup)
 ```bash
 sudo ls ~/.ssh
 ```
@@ -120,24 +132,23 @@ git clone git@github.com:name/example.git
 ```
 
 Make Changes and Push
+
+Edit any file
 ```bash
 nano /example/README.md
 ```
-
+Add all to git
 ```bash
 git add .
 ```
-
+Add commit comment
 ```bash
 git commit -m "Initial setup"
 ```
-
+Push to main branch
 ```bash
 git push origin main
 ```
-
-
-
 
 
 
