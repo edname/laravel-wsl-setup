@@ -4,6 +4,7 @@ If you would like to install different version of PHP it is required to mention 
 This guide is just for quick development WSL setup for learning and testing.
 
 ## WSL Install ->
+Let's install Windows WSL using PowerShell.
 ```bash
 wsl --install
 ```
