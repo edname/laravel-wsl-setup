@@ -53,7 +53,7 @@ sudo apt install php-sqlite3
 ```
 
 
-## Create laravel app -> OR GIT PULL your Laravel project and Go to next step
+## Create laravel app
 ```bash
 composer create-project laravel/laravel example-app
 ```
@@ -61,7 +61,7 @@ composer create-project laravel/laravel example-app
 php artisan serve
 ```
 
-##IF YOU GIT PULL PROJECT
+## IF YOU HAVE EXISTING PROJECT
 Go into project directory
 ```bash
 composer install
