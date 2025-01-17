@@ -53,10 +53,19 @@ Install Laravel Installer Globally: Run the following command to install the Lar
 ```bash
 composer global require laravel/installer
 ```
+
+Run the following command to find the exact directory:
+By looking into the output you will know what export PATH
+```bash
+composer global config home
+```
+
 Add Composer's Bin Directory to PATH: After installation, make sure the Laravel installer is in your system's PATH. Add the following line to your shell configuration file (e.g., ~/.bashrc, ~/.zshrc, or ~/.profile):
 ```bash
-export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 ```
+
+
 Then reload the shell configuration:
 ```bash
 source ~/.bashrc
