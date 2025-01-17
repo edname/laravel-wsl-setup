@@ -156,6 +156,15 @@ After that you can instal Project required dependencies
 ```bash
 npm install
 ```
+Build Assets with Vite
+For development:
+```bash
+npm run dev
+```
+For production
+```bash
+npm run build
+```
 
 # git-new-env-setup
 
