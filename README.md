@@ -157,11 +157,13 @@ After that you can instal Project required dependencies
 npm install
 ```
 Build Assets with Vite
-For development:
+For development it start Autoreload server:  
+And then you can use 'php artisan serve' on seperate CMD window to start working
 ```bash
 npm run dev
 ```
-For production
+For production aswell you can use it in development it will prebuild assets  
+But you would need to restart every time change is made (without need for keeping 'npm run dev' in seperate CMD window.
 ```bash
 npm run build
 ```
