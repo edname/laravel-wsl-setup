@@ -3,6 +3,11 @@ This guide is for installing latest PHP version from ppa:ondrej/php
 If you would like to install different version of PHP it is required to mention the version for all the packages.
 This guide is just for quick development WSL setup for learning and testing.
 
+[WSL Install](#WSL-Install)  
+[PHP Install](#PHP)  
+[Install Composer](#Install-Composer)  
+Install laravel globaly
+
 ## WSL Install ->
 Let's install Windows WSL using PowerShell.
 ```bash
@@ -65,7 +70,6 @@ Add Composer's Bin Directory to PATH: After installation, make sure the Laravel 
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 ```
 
-
 Then reload the shell configuration:
 ```bash
 source ~/.bashrc
@@ -122,6 +126,32 @@ Start the server
 ```bash
 php artisan serve
 ```
+
+# Install Node.js and npm
+Update your package index
+```bash
+sudo apt update
+```
+Install NodeSource's setup script:
+```bash
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+```
+Install Node.js and npm:
+```bash
+sudo apt install -y nodejs
+```
+Verify installation
+```bash
+node -v
+```
+```bash
+npm -v
+```
+After that you can instal Project required dependencies
+```bash
+npm install
+```
+
 # git-new-env-setup
 
 Set up your Git identity
