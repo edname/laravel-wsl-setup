@@ -3,10 +3,15 @@ This guide is for installing latest PHP version from ppa:ondrej/php
 If you would like to install different version of PHP it is required to mention the version for all the packages.
 This guide is just for quick development WSL setup for learning and testing.
 
-[WSL Install](#WSL-Install)  
-[PHP Install](#PHP)  
-[Install Composer](#Install-Composer)  
-Install laravel globaly
+[WSL Install](#wsl-install--)  
+[PHP Install](#php--)  
+[Install Composer](#install-composer--)  
+[Install laravel globaly](#install-laravel-globaly--)  
+[SQLite intall](#sqlite-intall--)  
+[Create laravel app](#create-laravel-app)  
+[Install Node.js and npm](#install-nodejs-and-npm)  
+[git-new-env-setup](#git-new-env-setup)  
+[How to Fully remove WSL](#how-to-fully-remove-wsl-with-all-files-and-config--)  
 
 ## WSL Install ->
 Let's install Windows WSL using PowerShell.
