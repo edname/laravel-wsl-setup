@@ -48,6 +48,28 @@ If you get "Installer verified" proceed to install
 sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
 ```
 
+## Install laravel globaly ->
+Install Laravel Installer Globally: Run the following command to install the Laravel installer globally using Composer:
+```bash
+composer global require laravel/installer
+```
+Add Composer's Bin Directory to PATH: After installation, make sure the Laravel installer is in your system's PATH. Add the following line to your shell configuration file (e.g., ~/.bashrc, ~/.zshrc, or ~/.profile):
+```bash
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+```
+Then reload the shell configuration:
+```bash
+source ~/.bashrc
+```
+Verify Laravel Installer
+```bash
+laravel --version
+```
+Create a New Project using laravel command
+```bash
+laravel new project --dev
+```
+
 ## SQLite intall ->
 Make sure that ppa:ondrej/php repository of PHP is added in the first steps
 ```bash
